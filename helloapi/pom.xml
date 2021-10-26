@@ -41,7 +41,7 @@
             <muleVersion>${muleVersion}</muleVersion>
             <username>${username}</username>
             <password>${password}</password>
-            <applicationName>vanchiv-ci-cd-demo</applicationName>
+            <applicationName>helloapi</applicationName>
             <environment>Sandbox</environment>
             <workerType>${workerType}</workerType>
             <workers>${workers}</workers>
