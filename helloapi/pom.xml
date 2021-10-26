@@ -30,6 +30,25 @@
 				<version>${mule.maven.plugin.version}</version>
 				<extensions>true</extensions>
 			</plugin>
+			<plugin>
+    <groupId>org.mule.tools.maven</groupId>
+    <artifactId>mule-maven-plugin</artifactId>
+    <version>3.3.5</version>
+    <extensions>true</extensions>
+    <configuration>
+        <cloudHubDeployment>
+            <uri>https://anypoint.mulesoft.com</uri>
+            <muleVersion>${muleVersion}</muleVersion>
+            <username>${username}</username>
+            <password>${password}</password>
+            <applicationName>vanchiv-ci-cd-demo</applicationName>
+            <environment>Sandbox</environment>
+            <workerType>${workerType}</workerType>
+            <workers>${workers}</workers>
+            <objectStoreV2>true</objectStoreV2>
+        </cloudHubDeployment>
+    </configuration>
+</plugin>
 		</plugins>
 	</build>
 
@@ -74,5 +93,7 @@
 			</snapshots>
 		</pluginRepository>
 	</pluginRepositories>
+	
+	
 
 </project>
