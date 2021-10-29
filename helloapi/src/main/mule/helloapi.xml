@@ -10,7 +10,7 @@ http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/htt
 	<flow name="helloapiFlow" doc:id="22fdaf33-7c30-4872-bafb-b2d4712ec2c9" >
 		<http:listener doc:name="Listener" doc:id="1ef31ee1-bb69-4cfe-8315-ac5ba3918399" config-ref="HTTP_Listener_config" path="hello" allowedMethods="GET">
 		</http:listener>
-		<set-payload value="Hello World Tushar commit1  !!" doc:name="Set Payload" doc:id="b92af457-15a1-4654-828a-6ec7f428e0b7" />
+		<set-payload value="Hello World Tushar TestCommit  !!" doc:name="Set Payload" doc:id="b92af457-15a1-4654-828a-6ec7f428e0b7" />
 		<logger level="INFO" doc:name="Logger" doc:id="de11e19c-a41e-4701-9eb4-355255486afe" message="#[payload]"/>
 	</flow>
 </mule>
