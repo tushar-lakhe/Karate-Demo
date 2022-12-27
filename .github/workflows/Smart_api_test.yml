@@ -35,15 +35,13 @@ jobs:
         - name: List Dir
           run: |
                 pwd
-                ls
-                cd /home/runner/work/Karate-Demo/Karate-Demo
-                ls
                 cd IdeaProjects/SmartAPIautomationframework
                 ls
                 pwd
                 echo "you are here"
-                export r_path=${path}
+                export r_path=pwd
                 echo "$r_path"
+                echo "now u are here"
             
         - name: Smart Api Automation execution for Api Test
           run: |
