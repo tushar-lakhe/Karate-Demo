@@ -38,9 +38,10 @@ jobs:
                 ls
                 cd /home/runner/work/Karate-Demo/Karate-Demo
                 ls
-                cd IdeaProjects/SmartAPIautomationframework/src/test/java/examples/users/pythonController
+                cd IdeaProjects/SmartAPIautomationframework
                 ls
                 pwd
+                export r_path = ${path}
             
         - name: Smart Api Automation execution for Api Test
           run: |
