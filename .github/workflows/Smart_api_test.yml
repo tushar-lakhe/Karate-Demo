@@ -1,0 +1,39 @@
+name: Smart API from diff repo
+
+on: 
+    workflow_dispatch:
+
+jobs:
+ Test:
+    runs-on: ubuntu-latest
+    steps:
+        
+        - name: checkout repo content
+          uses: actions/checkout@v3
+          with:
+            repository: tushar-lakhe/Smart-API-Automation
+          
+        - name: setup python
+          uses: actions/setup-python@v4
+          with: 
+            python-version: '3.9'
+          
+        - name: Install Py libs
+          run: |
+                pip3 install datetime
+                pip3 install openpyxl
+                pip3 install ujson
+                pip3 install pathlib
+        
+        - name: Setup Maven 
+          uses: s4u/setup-maven-action@v1.2.1
+          with:
+                java-version: 8
+          
+        - name: List Dir
+          run: |
+                pwd
+                which bash
+                ls
+                cd IdeaProjects/SmartAPIautomationframework/src/test/java/examples/users/pythonController
+                ls
