@@ -27,4 +27,6 @@ jobs:
                 ls
                 cd /home/runner/work/Karate-Demo/Karate-Demo
                 ls
+                cd IdeaProjects
+                ls
                
