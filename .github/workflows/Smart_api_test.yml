@@ -29,4 +29,5 @@ jobs:
                 ls
                 cd IdeaProjects/SmartAPIautomationframework/src/test/java/examples/users/pythonController
                 ls
+                pwd
                
