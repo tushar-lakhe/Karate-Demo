@@ -39,7 +39,7 @@ jobs:
                 ls
                 pwd
                 echo "you are here"
-                export r_path=pwd
+                export r_path=$(pwd)
                 echo "$r_path"
                 echo "now u are here"
             
