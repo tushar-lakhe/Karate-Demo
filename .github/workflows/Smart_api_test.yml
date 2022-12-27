@@ -37,5 +37,7 @@ jobs:
                 pwd
                 which bash
                 ls
+                cd /home/runner/work/Karate-Demo/Karate-Demo
+                ls
                 cd IdeaProjects/SmartAPIautomationframework/src/test/java/examples/users/pythonController
                 ls
