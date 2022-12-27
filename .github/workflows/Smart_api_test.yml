@@ -41,7 +41,9 @@ jobs:
                 cd IdeaProjects/SmartAPIautomationframework
                 ls
                 pwd
-                export r_path = ${path}
+                echo "you are here"
+                export r_path=${path}
+                echo "$r_path"
             
         - name: Smart Api Automation execution for Api Test
           run: |
