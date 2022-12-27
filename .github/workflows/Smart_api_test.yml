@@ -8,13 +8,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
         
-        - name: checkout repo content
-          uses: actions/checkout@v3
-          with:
-            repository: tushar-lakhe/Smart-API-Automation
-            token: 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 
-            ref: main
-          
         - name: setup python
           uses: actions/setup-python@v4
           with: 
@@ -31,7 +24,14 @@ jobs:
           uses: s4u/setup-maven-action@v1.2.1
           with:
                 java-version: 8          
-         
+
+        - name: checkout repo content
+          uses: actions/checkout@v3
+          with:
+            repository: tushar-lakhe/Smart-API-Automation
+            token: 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 
+            ref: main
+                   
         - name: List Dir
           run: |
                 pwd
