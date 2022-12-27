@@ -20,24 +20,11 @@ jobs:
           with: 
             python-version: '3.9'
           
-        - name: Install Py libs
-          run: |
-                pip3 install datetime
-                pip3 install openpyxl
-                pip3 install ujson
-                pip3 install pathlib
-        
-        - name: Setup Maven 
-          uses: s4u/setup-maven-action@v1.2.1
-          with:
-                java-version: 8
-          
+         
         - name: List Dir
           run: |
                 pwd
-                which bash
                 ls
                 cd /home/runner/work/Karate-Demo/Karate-Demo
                 ls
-                cd IdeaProjects/SmartAPIautomationframework/src/test/java/examples/users/pythonController
-                ls
+               
