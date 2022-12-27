@@ -12,6 +12,8 @@ jobs:
           uses: actions/checkout@v3
           with:
             repository: tushar-lakhe/Smart-API-Automation
+            token: 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 
+            ref: main
           
         - name: setup python
           uses: actions/setup-python@v4
