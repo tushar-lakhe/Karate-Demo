@@ -35,9 +35,7 @@ jobs:
         - name: List Dir
           run: |
                 pwd
-                cd IdeaProjects/SmartAPIautomationframework
                 ls
-                pwd
                 echo "you are here"
                 export r_path=$(pwd)
                 echo "$r_path"
